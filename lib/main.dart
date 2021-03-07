@@ -39,15 +39,15 @@ class MyPage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: FlatButton(
-          onPressed: () {
-            flutterToast();
-          },
-          child: Text("Toast"),
-          color: Colors.red,
-        ),
-      ),
+      // body: Center(
+      //   child: FlatButton(
+      //     onPressed: () {
+      //       flutterToast();
+      //     },
+      //     child: Text("Toast"),
+      //     color: Colors.red,
+      //   ),
+      // ),
       // MySnackBar(),
       drawer: Drawer(
         child: ListView(
@@ -136,12 +136,12 @@ class MyPage extends StatelessWidget {
 //   }
 // }
 
-void flutterToast() {
-  Fluttertoast.showToast(
-      msg: "Welcome to Konosuba Store!",
-      gravity: ToastGravity.BOTTOM,
-      backgroundColor: Colors.red,
-      fontSize: 20,
-      textColor: Colors.white,
-      toastLength: Toast.LENGTH_SHORT);
-}
+// void flutterToast() {
+//   Fluttertoast.showToast(
+//       msg: "Welcome to Konosuba Store!",
+//       gravity: ToastGravity.BOTTOM,
+//       backgroundColor: Colors.red,
+//       fontSize: 20,
+//       textColor: Colors.white,
+//       toastLength: Toast.LENGTH_SHORT);
+// }
