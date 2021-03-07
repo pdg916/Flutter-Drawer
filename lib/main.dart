@@ -39,16 +39,16 @@ class MyPage extends StatelessWidget {
           ),
         ],
       ),
-      body: //Center(
-          //   child: FlatButton(
-          //     onPressed: () {
-          //       flutterToast();
-          //     },
-          //     child: Text("Toast"),
-          //     color: Colors.red,
-          //   ),
-          // ),
-          MySnackBar(),
+      body: Center(
+        child: FlatButton(
+          onPressed: () {
+            flutterToast();
+          },
+          child: Text("Toast"),
+          color: Colors.red,
+        ),
+      ),
+      // MySnackBar(),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -111,37 +111,37 @@ class MyPage extends StatelessWidget {
   }
 }
 
-class MySnackBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: RaisedButton(
-        child: Text('Snack Bar!'),
-        color: Colors.red,
-        onPressed: () {
-          Scaffold.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Welcome to Konosuba Store!',
-                textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white),
-              ),
-              backgroundColor: Colors.red,
-              duration: Duration(milliseconds: 1000),
-            ),
-          );
-        },
-      ),
-    );
-  }
-}
-
-// void flutterToast() {
-//   Fluttertoast.showToast(
-//       msg: "Welcome to Konosuba Store!",
-//       gravity: ToastGravity.BOTTOM,
-//       backgroundColor: Colors.red,
-//       fontSize: 20,
-//       textColor: Colors.white,
-//       toastLength: Toast.LENGTH_SHORT);
+// class MySnackBar extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//       child: RaisedButton(
+//         child: Text('Snack Bar!'),
+//         color: Colors.red,
+//         onPressed: () {
+//           Scaffold.of(context).showSnackBar(
+//             SnackBar(
+//               content: Text(
+//                 'Welcome to Konosuba Store!',
+//                 textAlign: TextAlign.center,
+//                 style: TextStyle(color: Colors.white),
+//               ),
+//               backgroundColor: Colors.red,
+//               duration: Duration(milliseconds: 1000),
+//             ),
+//           );
+//         },
+//       ),
+//     );
+//   }
 // }
+
+void flutterToast() {
+  Fluttertoast.showToast(
+      msg: "Welcome to Konosuba Store!",
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.red,
+      fontSize: 20,
+      textColor: Colors.white,
+      toastLength: Toast.LENGTH_SHORT);
+}
